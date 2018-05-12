@@ -1,0 +1,307 @@
+﻿*{
+    padding:0px;
+    margin: 0px;
+}
+
+html, body {
+    margin: 0; height: 100%; overflow: hidden
+}
+
+/*ALL CLASSES*/
+.all {
+    position: absolute;
+    left: 1050px;
+    top: 430px;
+    transform: scale(0.5);
+}
+
+.dashboard {
+    position: absolute;
+    top: 530px;
+    z-index: -2;
+    left: -100px; 
+}
+
+.panel {
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    z-index: -1;
+}
+
+.wheel {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+}
+
+.optionbar {
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 400px;
+    left: 568px;
+}
+
+.buttons {
+    visibility: hidden;
+    position: relative;
+    z-index: 2;
+    top: 360px;
+    left: 560px;
+}
+
+.rollover {
+    visibility: hidden;
+    position: relative;
+    z-index: 2;
+    top: 360px;
+    left: 560px;
+}
+
+.assets {
+    visibility: hidden;
+    position: relative;
+    z-index: 0;
+    top: 350px;
+    left: 560px;
+}
+
+/*DIV IDs*/
+
+#video {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: -3;
+    width: auto;
+    height: 1000px;
+    overflow: hidden;
+}
+
+#button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/*HOME SCREEN*/
+
+#home-1 {
+    visibility: visible; 
+    padding-top: 8px;
+}
+
+#home-2 {
+    visibility: visible;
+    position: absolute;
+    padding-left: 130px;
+    padding-top: 8px;
+}
+
+#home-3 {
+    visibility: visible;
+    position: absolute;
+    padding-left: 260px;
+    padding-top: 8px;
+}
+
+#home-4 {
+    visibility: visible;
+    position: absolute;
+    padding-top: 115px;
+}
+
+#home-5 {
+    visibility: visible;
+    position: absolute;
+    padding-left: 130px;
+    padding-top: 115px;
+}
+
+#home-6 {
+    visibility: visible;
+    position: absolute;
+    padding-left: 260px;
+    padding-top: 115px;
+}
+
+#home-1-rollover {
+    visibility: visible;
+    position: absolute;
+    padding-top: 8px;
+}
+
+#home-2-rollover {
+    position: absolute;
+    padding-left: 130px;
+    padding-top: 8px;
+}
+
+#home-3-rollover {
+    position: absolute;
+    padding-left: 260px;
+    padding-top: 8px;
+}
+
+#home-4-rollover {
+    position: absolute;
+    padding-top: 115px;
+}
+
+#home-5-rollover {
+    position: absolute;
+    padding-left: 130px;
+    padding-top: 115px;
+}
+
+#home-6-rollover {
+    position: absolute;
+    padding-left: 260px;
+    padding-top: 115px;
+}
+
+/*MUSIC SCREEN*/
+
+#music-1 {
+    visibility: hidden;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 55px;
+}
+
+#music-2 {
+    position: absolute;
+    padding-left: 100px;
+    padding-top: 55px;
+}
+
+#music-3 {
+    position: absolute;
+    padding-left: 190px;
+    padding-top: 55px;
+}
+
+#music-4 {
+    position: absolute;
+    padding-left: 270px;
+    padding-top: 55px;
+}
+
+#music-1-rollover {
+    visibility: hidden;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 55px;
+}
+
+#music-2-rollover {
+    position: absolute;
+    padding-left: 100px;
+    padding-top: 55px;
+}
+
+#music-3-rollover {
+    position: absolute;
+    padding-left: 190px;
+    padding-top: 55px;
+}
+
+#music-4-rollover {
+    position: absolute;
+    padding-left: 270px;
+    padding-top: 55px;
+}
+
+#titlebar {
+    position: absolute;
+    padding-top: 2px;
+    padding-left: 9px;
+}
+
+#albumart {
+    position: absolute;
+    padding-top: 30px;
+    padding-left: 120px;
+}
+
+#songtitle {
+    position: absolute;
+    padding-top: 184px;
+    padding-left: 95px;
+}
+
+#songinfo {
+    position: absolute;
+    padding-top: 207px;
+    padding-left: 112px;
+}
+
+#duration {
+    position: absolute;
+    padding-top: 230px;
+    padding-left: 20px;
+}
+
+/*FOLDER SELECT SCREEN*/
+
+#folder-1 {
+    visibility: hidden;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 55px;
+}
+
+#folder-2 {
+    position: absolute;
+    padding-left: 100px;
+    padding-top: 55px;
+}
+
+#folder-3 {
+    position: absolute;
+    padding-left: 190px;
+    padding-top: 55px;
+}
+
+#folder-4 {
+    position: absolute;
+    padding-left: 280px;
+    padding-top: 55px;
+}
+
+#folder-1-rollover {
+    visibility: hidden;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 55px;
+}
+
+#folder-2-rollover {
+    visibility: hidden;
+    position: absolute;
+    padding-left: 100px;
+    padding-top: 55px;
+}
+
+#folder-3-rollover {
+    visibility: hidden;
+    position: absolute;
+    padding-left: 190px;
+    padding-top: 55px;
+}
+
+#folder-4-rollover {
+    position: absolute;
+    padding-left: 280px;
+    padding-top: 55px;
+}
+
+
+
+
+
+
+
+

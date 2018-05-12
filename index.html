@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Stellardrive Simulator</title>
+    <link rel="stylesheet" type="text/css" href="css\index.css"/>
+    <link rel="script" type="text/javascript" href="js\index.js"/>
+    <script type="text/javascript" src="js\index.js"></script>
+
+</head>
+<body>
+
+    <img src="assets\dash.png" class="dashboard"/>
+
+    <div id="button">
+        <button onclick="toggleVideo()">Toggle Video</button>
+    </div>
+
+    <div id="video">
+        <!--<video autoplay muted loop><source src="assets\driving.mp4" type="video/mp4"></video>-->
+        <iframe width=100% height=100% src="https://www.youtube.com/embed/2eQnuivswQ4?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="all">
+        
+        <img src="assets\panelweb.png" class="panel"/>
+        <img src="assets\wheelweb.png" class="wheel" usemap="#buttons"/>
+
+        <!--Home assets-->
+        <img src="assets\home\home-1.png" class="buttons" id="home-1"/>
+        <img src="assets\home\home-1-rollover.png" class="rollover" id="home-1-rollover"/>
+        <img src="assets\home\home-2.png" class="buttons" id="home-2"/>
+        <img src="assets\home\home-2-rollover.png" class="rollover" id="home-2-rollover"/>
+        <img src="assets\home\home-3.png" class="buttons" id="home-3"/>
+        <img src="assets\home\home-3-rollover.png" class="rollover" id="home-3-rollover"/>
+        <br />
+        <img src="assets\home\home-4.png" class="buttons" id="home-4" />
+        <img src="assets\home\home-4-rollover.png" class="rollover" id="home-4-rollover" />
+        <img src="assets\home\home-5.png" class="buttons" id="home-5" />
+        <img src="assets\home\home-5-rollover.png" class="rollover" id="home-5-rollover" />
+        <img src="assets\home\home-6.png" class="buttons" id="home-6" />
+        <img src="assets\home\home-6-rollover.png" class="rollover" id="home-6-rollover" />
+
+        <!--Music assets-->
+        <img src="assets\music\titlebar.png" class="assets" id="titlebar" />
+        <img src="assets\music\americanidiot.png" class="assets" id="albumart" />
+        <img src="assets\music\songtitle.png" class="assets" id="songtitle" />
+        <img src="assets\music\songinfo.png" class="assets" id="songinfo" />
+        <img src="assets\music\duration.png" class="assets" id="duration" />
+
+        <!--Music OptionBar assets-->
+        <img src="assets\music\optionbar.png" class="optionbar" id="optionbar" />
+
+        <img src="assets\music\music-1.png" class="buttons" id="music-1" />
+        <img src="assets\music\music-1-rollover.png" class="rollover" id="music-1-rollover" />
+
+        <img src="assets\music\music-2.png" class="buttons" id="music-2" />
+        <img src="assets\music\music-2-rollover.png" class="rollover" id="music-2-rollover" />
+
+        <img src="assets\music\music-3.png" class="buttons" id="music-3" />
+        <img src="assets\music\music-3-rollover.png" class="rollover" id="music-3-rollover" />
+
+        <img src="assets\music\music-4.png" class="buttons" id="music-4" />
+        <img src="assets\music\music-4-rollover.png" class="rollover" id="music-4-rollover" />
+
+        <!--Folder Selection OptionBar assets-->
+        <img src="assets\music\optionbar.png" class="optionbar" id="optionbar" />
+
+        <img src="assets\folderselect\folder-1.png" class="buttons" id="folder-1" />
+        <img src="assets\folderselect\folder-1-rollover.png" class="rollover" id="folder-1-rollover" />
+
+        <img src="assets\folderselect\folder-2.png" class="buttons" id="folder-2" />
+        <img src="assets\folderselect\folder-2-rollover.png" class="rollover" id="folder-2-rollover" />
+
+        <img src="assets\folderselect\folder-3.png" class="buttons" id="folder-3" />
+        <img src="assets\folderselect\folder-3-rollover.png" class="rollover" id="folder-3-rollover" />
+
+        <img src="assets\folderselect\folder-4.png" class="buttons" id="folder-4" />
+        <img src="assets\folderselect\folder-4-rollover.png" class="rollover" id="folder-4-rollover" />
+
+        <map name="buttons">
+            <!---Right-hand buttons-->
+            <area alt="Answer" id="answerButton" shape="poly"
+                  coords="1056, 723
+                          1062, 719
+                          1116, 720
+                          1168, 765
+                          1065, 762
+                          1064, 751"
+                  href="javascript:featureNotAvailable()"
+                  target="_self"/>
+
+            <area alt="Home" id="homeButton" shape="poly"
+                  coords="1116, 720
+                          1181, 724
+                          1223, 756
+                          1168, 765"
+                  href="javascript:homeScreen()"
+                  target="_self" />
+
+            <area alt="Volume Up" id="volUpButton" shape="poly"
+                  coords="1181, 724
+                          1236, 724
+                          1281, 779
+                          1236, 767
+                          1223, 765"
+                  href="javascript:featureNotAvailable()"
+                  target="_self" />
+
+            <area alt="Volume Down" id="volDownButton" shape="poly"
+                  coords="1224, 830
+                          1281, 815
+                          1222, 872
+                          1177, 873"
+                  href="javascript:featureNotAvailable()"
+                  target="_self" />
+
+            <area alt="Option" id="optionButton" shape="poly"
+                  coords="1169, 830
+                          1224, 830
+                          1177, 873
+                          1114, 874"
+                  href="javascript:optionButton()"
+                  target="_self" />
+
+            <area alt="Hang Up" id="hangUpButton" shape="poly"
+                  coords="1065, 831
+                          1169, 830
+                          1114, 874
+                          1062, 874
+                          1057, 869
+                          1064, 842"
+                  href="javascript:featureNotAvailable()"
+                  target="_self" />
+
+            <!--D-Pad buttons-->
+            <area alt="Up" id="dPadUp" shape="rect"
+                  coords="309, 725
+                          376, 774"
+                  href="javascript:dPadPress(1)"
+                  target="_self" />
+
+            <area alt="Right" id="dPadRight" shape="rect"
+                  coords="377, 774
+                          421,834"
+                  href="javascript:dPadPress(2)"
+                  target="_self" />
+
+            <area alt="Down" id="dPadDown" shape="rect"
+                  coords="309, 834
+                          735, 880"
+                  href="javascript:dPadPress(3)"
+                  target="_self" />
+
+            <area alt="Left" id="dPadLeft" shape="rect"
+                  coords="257, 774
+                          309,834"
+                  href="javascript:dPadPress(4)"
+                  target="_self" />
+
+            <area alt="Select" id="dPadSelect" shape="rect"
+                  coords="309, 774
+                          377,834"
+                  href="javascript:dPadPress(5)"
+                  target="_self" />
+        </map>
+
+    </div>
+
+</body>
+</html>
